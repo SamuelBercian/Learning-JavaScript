@@ -38,14 +38,14 @@
 }
 
 // Ejemplo 1
-// var var_ejemplo = prompt("Tu edad: ");
-// console.log("Tu edad es: ", var_ejemplo);
+var var_ejemplo = prompt("Tu edad: ");
+console.log("Tu edad es: ", var_ejemplo);
 
-// let let_ejemplo = prompt("Tu nombre es: ");
-// console.log("Tu nombre es: ", let_ejemplo);
+let let_ejemplo = prompt("Tu nombre es: ");
+console.log("Tu nombre es: ", let_ejemplo);
 
-// const const_ejemplo = 3.1416;
-// console.log("El valor de PI es: ", const_ejemplo);
+const const_ejemplo = 3.1416;
+console.log("El valor de PI es: ", const_ejemplo);
 
 // Ejemplo 2
 // Cambiar el tipo de variable var a let
