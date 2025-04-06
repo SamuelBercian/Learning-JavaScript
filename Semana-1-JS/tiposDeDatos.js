@@ -92,3 +92,33 @@ if(hora <= 11.59){
 }else if(hora >= 18.00){
     console.log('Buenas noches, son las ', hora, ' p.m');
 }
+
+// Tipos de datos: Switch
+
+// Ejemplo Switch
+let valor1 = prompt('Ingrese valor 1: ');
+let valor2 = prompt('Ingrese valor 2: ');
+
+let opcion = prompt('Que desea hacer?, sumar, restar, dividir o multiplicar');
+
+
+switch(opcion){
+    case 'sumar':
+        console.log('La suma total es: ', valor1 + valor2);
+        break;
+    
+    case 'restar':
+        console.log('La resta total es: ', valor1 - valor2);
+        break;
+
+    case 'dividir':
+        console.log('La division total es: ', valor1 / valor2);
+        break;
+    
+    case 'multiplicar':
+        console.log('La multiplicacion total es: ', valor1 * valor2);
+        break;
+    
+    default:
+        console.log('Ingrese una opcion valida!');
+}
