@@ -17,3 +17,10 @@ Ejemplo1_2(2, 5);
 // Párametros y valores de retorno: Valores de Retorno
 // Una función puede devolver un valor usando la palabra clave return. 
 // Este valor puede ser almacenado o usado más adelante.
+function Ejemplo_2(num1, num2){
+    return num1 + num2;
+}
+// return num1 + num2 devuelve el resultado de la operación y Ese valor se guarda en la variable suma
+let suma = Ejemplo_2(2, 2);
+console.log('Suma: ', suma);
+
