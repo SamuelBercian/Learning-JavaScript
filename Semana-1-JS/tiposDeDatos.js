@@ -22,7 +22,6 @@ console.log(ejemplo1.toUpperCase()); // Convertir en mayusculas
 console.log(ejemplo1.toLowerCase()); // Converir en minusculas
 console.log(ejemplo1.includes("S")); // Ver si contiene una letra o palabra
 console.log(ejemplo1.charAt(1)); // Obtener un caracter por posición
-
 // Tipos de datos: boolean
 let esMayor = true;
 let esMenor = false;

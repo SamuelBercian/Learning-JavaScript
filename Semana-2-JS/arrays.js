@@ -78,3 +78,67 @@ Ejemplo_7.slice();
 
 // Mostrara lo siguiente ['Elemento nuevo 1, Elemento 2, Elemento nuevo 3, Elemento 4]
 console.log(Ejemplo_7);
+
+// Array: Busqueda y verificacion
+// Array: Includes
+// Este metodo verifica si existe algun elemento
+const Ejemplo_8 = ['Nombre', 'Apellido', 'Edad'];
+// Si el elemento devolvera un true (Se mostrara true en la consola)
+console.log(Ejemplo_8.includes('Nombre'));  
+
+// Array: indexOf
+// Este metodo devuelve el indice del primer match
+console.log(Ejemplo_8.indexOf('Apellido'));
+
+// Array: lastIndexOf
+// Este metodo devuelve el indice del ultimo match
+console.log(Ejemplo_8.lastIndexOf('Edad'));
+
+// Array: find
+// Este metodo devuelve el primer elemento que cumpla algo
+const Ejemplo8_1 = [1, 2, 3, 4, 5];
+const encontrado = Ejemplo8_1.find(num => num > 2);
+console.log(encontrado);
+
+// Array: findIndex
+// Este metodo devuelve el indice del primer elemento que cumpla algo
+const numeros = [10, 20, 30, 40, 50];
+const indice = numeros.findIndex(num => num > 1);
+console.log(indice);
+
+// Array: Transformacion y Recorrido
+// Array: forEach
+// Ejecuta una funcion por cada elemento
+let Ejemplo_9 = [1, 2, 3, 4, 5];
+// El resultado sera 7, 14, 21, 28, 35
+Ejemplo_9.forEach(n => console.log(n * 7));
+
+// Array: map
+// Crea un nuevo array con los resultados
+let nuevoArray = Ejemplo_9.map(n => n * 4);
+// El resultado sera un nuevo array
+console.log(nuevoArray);
+
+// Array: filter
+// Crea un nuevo array con elementos que cumplan una funcion
+let creaElemento = Ejemplo_9.filter(n => n % 2 === 0);
+// Resultado sera 2, 4
+console.log(creaElemento);
+
+// Array: reduce
+// Reduce el array a un solo valor (promedio, suma, resta, etc)
+let arrayUnValor = Ejemplo_9.reduce((acc, n) => acc + n, 0);
+// Resultado sera 15
+console.log(arrayUnValor);
+
+// Array: sort
+// Ordena los elementos (alfabeticos por defecto)
+const Ejemplo_10 = ['Samuel', 'Jose', 'Pinocho', 'Bercian'];
+Ejemplo_10.sort();
+// El array se ordena alfabeticamente
+console.log(Ejemplo_10);
+
+// Array: reverse
+// Invierte el orden del array
+Ejemplo_10.reverse();
+console.log(Ejemplo_10);
