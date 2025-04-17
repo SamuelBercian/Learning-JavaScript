@@ -142,3 +142,30 @@ console.log(Ejemplo_10);
 // Invierte el orden del array
 Ejemplo_10.reverse();
 console.log(Ejemplo_10);
+
+// Array: Conversion y Union
+// Array: join()
+// Une elementos del array en un solo string
+const Ejemplo_11 = ['a', 'b', 'c'];
+// Resultado sera a-b-c
+console.log(Ejemplo_11.join('-'));
+
+// Array: toString
+// Convierte el array en un string
+// El resultado sera a,b,c
+console.log(Ejemplo_11.toString());
+
+// Array: concat()
+// Une dos arrays
+const Ejemplo_12 = ['este array', 'se unira', 'con el Ejemplo_11'];
+let Concatenacion = Ejemplo_11.concat(Ejemplo_12);
+// El resultado sera ['a', 'b', 'c', 'este array', 'se unira', 'con el Ejemplo_11']
+console.log(Concatenacion);
+
+// Arrays: flat()
+// Aplana los arrays anidados
+let Ejemplo_13 = [1, 2, [3, 4], [5, 6]];
+let aplanado = Ejemplo_13.flat();
+// Resultado: [1, 2, 3, 4, 5, 6]
+console.log(aplanado);
+
